@@ -8,3 +8,4 @@ An initial AI is expected to be done for the WOW TCG as it is the game I like th
 
 On the technological front, the game uses a client done in java, with the Slick 2D framework, and a server done in pure 
 java that will host multiplayer games. No connection will be needed to play offline games with the AI or to build decks.
+Maven is used for packaging, Spring for the modularization of the code.
