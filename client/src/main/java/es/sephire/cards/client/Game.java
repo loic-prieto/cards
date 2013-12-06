@@ -1,6 +1,10 @@
-package es.sephire.cards;
+package es.sephire.cards.client;
 
+import es.sephire.cards.api.domain.Card;
+import es.sephire.cards.api.domain.CardType;
 import org.newdawn.slick.*;
+
+import java.util.Locale;
 
 /**
  * A game using Slick2d
@@ -26,7 +30,15 @@ public class Game extends BasicGame {
     }
 
     public void render(GameContainer container, Graphics g) throws SlickException {
-        g.drawString("Hello, " + Integer.toString(counter) + "!", 50, 50);
+        CardType ct = new CardType();
+        ct.setId(1L);
+        ct.setName(Locale.ENGLISH, "Land");
+        Card card = new Card();
+        card.setId(1L);
+        card.setCardType(ct);
+        card.setName(Locale.ENGLISH, "Urza's Tower");
+        card.setDescription(Locale.ENGLISH, "The magnificent and definitive Urza's Tower.");
+        g.drawString("I'm rendering " + card, 50, 50);
 
     }
 

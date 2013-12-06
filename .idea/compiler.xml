@@ -22,7 +22,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="cards" />
+        <module name="client" />
+        <module name="common" />
+        <module name="server" />
       </profile>
     </annotationProcessing>
   </component>
