@@ -12,7 +12,7 @@
     <artifactId>client</artifactId>
 
     <properties>
-        <main.class>es.sephire.cards.client.Game</main.class>
+        <main.class>es.sephire.cards.client.components.Game</main.class>
     </properties>
 
     <dependencies>
@@ -78,6 +78,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
